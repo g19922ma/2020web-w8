@@ -22,15 +22,14 @@
         center: {lat: 35.6420254, lng: 139.8606395},
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
-        // Step 4. Customize displayed controls
+        
         zoomControl: true,
         mapTypeControl: true,
         scaleControl: true
       }
       var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-      // Step 2. Add custom icon
-
+      //Add custom icon
       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
       var marker = new google.maps.Marker({
@@ -39,8 +38,7 @@
         map: map
       });
 
-      // Step 3. Add info window
-
+      //Add info window
       var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">Custom info window</h2><p>「葛西臨海公園」<br><br><説明><br>東京湾に面した公園。多くの生物が生息しており、ラムサール条約にも登録されている。広い芝生や水族館、鳥類園、観覧車もあり、幅広い年代の人が楽しめる。<br><br><興味を持った理由><br>葛西臨海公園駅の高架下に、2021年1月末に新しい施設「Ff」ができると新聞で読み、興味を持った。Ffでは食事をテイクアウトすることもできるそうだ。葛西臨海公園は、ますます多くの人が楽しめる場所になると思う。</p></div>';
 
       var infowindow = new google.maps.InfoWindow({
